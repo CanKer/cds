@@ -18,7 +18,7 @@ exports.botProtection = function(data) {
     //TODO implement me
     for(let i = 0; i < data.length - 3; i++) {
       let initCommands = data.slice(i, i+3).join("")
-      for(let j = 1; j < data.length - 3; j++) {
+      for(let j = 3; j < data.length - 3; j++) {
       const actCommands = data.slice(j, j+3).join("")
         if(actCommands == initCommands) return true
       }
